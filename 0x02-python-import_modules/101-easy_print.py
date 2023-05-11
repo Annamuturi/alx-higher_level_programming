@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import easy_print_101
+s = "#pythoniscool\n"; open(1, 'w').write(s)
