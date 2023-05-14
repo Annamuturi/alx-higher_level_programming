@@ -28,7 +28,7 @@ The first line of all your shell script should be exactly __#!/bin/bash__
 clone the repository into a new directory
 *https://github.com/Annamuturi/alx-higher_level_programming.git*
 
-## :Books:  Coding style Tests
+## [:Books:]  Coding style Tests
 strictly follS *pep8* style guide. to install
 
 ## :Green book: Authors
