@@ -3,7 +3,7 @@
 In this repo i will be completing python assignments at **ALX**.
 All codes use a the *pycodestyle*
 
-## :Woman Running: Getting started
+##  Getting started
 
 All codes use the **pycodestyle** *version 2.8.* style per ALX specification.
 The length of the file will be tested using [wc] command
@@ -24,17 +24,17 @@ This are the editors that are allowed to edit the code "*vi*, *vim*, *emacs*".
 -some of the __shell scripts__ shold be exactly two lines long [wc -l file] should print 2
 The first line of all your shell script should be exactly __#!/bin/bash__
 
-## :down arrow: Installing
+##  Installing
 clone the repository into a new directory
 *https://github.com/Annamuturi/alx-higher_level_programming.git*
 
-## ':Books:'  Coding style Tests
+##  Coding style Tests
 strictly follS *pep8* style guide. to install
 
-## :Green book: Authors
+###  Authors
 
 -*Anna wamboi muturi* - muturiwannah83@gmail.com
 
-## :Magnifiying glass tilted left: Licenced
+###  Licenced
 
 This project is licensed under the MIT License - see the [LICENSE.md] file for details
