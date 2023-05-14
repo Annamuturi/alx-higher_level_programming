@@ -12,7 +12,7 @@ The first line of the codes should be exactly (#!/usr/bin/python3)
 [python3] (version 3.8.5) - python version used
 This are the editors that are allowed to edit the code "*vi*, *vim*, *emacs*".
 
-### :warning: Prerequisites
+## :warning: Prerequisites
 
 -Must have **git** installed
 -Must have your own repository cloned
@@ -24,17 +24,17 @@ This are the editors that are allowed to edit the code "*vi*, *vim*, *emacs*".
 -some of the __shell scripts__ shold be exactly two lines long [wc -l file] should print 2
 The first line of all your shell script should be exactly __#!/bin/bash__
 
-#### :down arrow: Installing
+## :down arrow: Installing
 clone the repository into a new directory
 *https://github.com/Annamuturi/alx-higher_level_programming.git*
 
-##### :Books:  Coding style Tests
+## :Books:  Coding style Tests
 strictly follS *pep8* style guide. to install
 
-##### :Green book: Authors
+## :Green book: Authors
 
 -*Anna wamboi muturi* - muturiwannah83@gmail.com
 
-###### :Magnifiying glass tilted left: Licenced
+## :Magnifiying glass tilted left: Licenced
 
 This project is licensed under the MIT License - see the [LICENSE.md] file for details
