@@ -45,6 +45,33 @@ void print_python_bytes(PyObject *p)
 	setbuf(stdout, NULL);
 }
 
+/**
+ * print_python_float - Prints float information
+ *
+ * @p: Python Object
+ * Return: no return
+ */
+void print_python_float(PyObject *p)
+{
+	double val;
+	char *nf;
+
+	setbuf(stdout, NULL);
+	printf("[.] float object info\n");
+
+	if (!PyFloat_Check(p))
+	{
+		printf("  [ERROR] Invalid Float Object\n");
+		setbuf(stdout, NULL);
+		return;
+	}
+
+	val = ((PyFloatObject *)(p))->ob_fval;
+	nf = PyOS_double_to_string(val, 'r', 0, Py_DTSF_ADD_DOT_0, Py_DTST_FINITE);
+
+	printf("  value: %s\n", nf);
+	setbuf(stdout, NULL);
+}
 
 /**
  * print_python_list - Prints list information
@@ -52,7 +79,6 @@ void print_python_bytes(PyObject *p)
  * @p: Python Object
  * Return: no return
  */
-
 void print_python_list(PyObject *p)
 {
 	long int size, i;
@@ -85,33 +111,5 @@ void print_python_list(PyObject *p)
 		if (PyFloat_Check(obj))
 			print_python_float(obj);
 	}
-	setbuf(stdout, NULL);
-}
-
-/**
- * print_python_float - Prints float information
- *
- * @p: Python Object
- * Return: no return
- */
-void print_python_float(PyObject *p)
-{
-	double val;
-	char *nf;
-
-	setbuf(stdout, NULL);
-	printf("[.] float object info\n");
-
-	if (!PyFloat_Check(p))
-	{
-		printf("  [ERROR] Invalid Float Object\n");
-		setbuf(stdout, NULL);
-		return;
-	}
-
-	val = ((PyFloatObject *)(p))->ob_fval;
-	nf = PyOS_double_to_string(val, 'r', 0, Py_DTSF_ADD_DOT_0, Py_DTST_FINITE);
-
-	printf("  value: %s\n", nf);
 	setbuf(stdout, NULL);
 }
