@@ -1,0 +1,59 @@
+The 0-add_integer test module.
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+
+Using 0-add_integer module takes two integers or floats as arguments and returns their sum
+
+++++++++++++++++++++++++++++++++++++
+
+Import function from module:
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Test 1:
+Adding two positive integers (a = 1 and b = 2)
+>>> add_integer(1, 2)
+3
+
+Test 2:
+Adding one positive and one negative integer (a = 102 and b = -4)
+>>> add_integer(102, -4)
+98
+
+Test 3:
+Adding two integers with the second being the same as the default value of b (a = 2 and b = 98)
+>>> add_integer(2)
+100
+
+Test 4:
+
+Adding a positive float and a positive integer (a = 94.5 and b = 4)
+>>> add_integer(94.5, 4)
+98
+
+Test 5:
+...     add_integer(None)
+... except Exception as e:
+...     print(e)
+...
+
+Test 6:
+...     add_integer(4, "School")
+... except Exception as e:
+...     print(e)
+...
+
+Test 7:
+case Overflow:
+
+>>> add_integer(float('inf'), 0)
+Traceback (most recent call last):
+    	      ...
+OverflowError: cannot convert float infinity to integer
+
+Test 8:
+case NaN 1:
+
+>>> add_integer(0, float('nan'))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
