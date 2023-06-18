@@ -28,4 +28,14 @@ The following function tools were used in creating all the classes and testing i
 * Python Scripts are written with Python 3.4.3
 * Tested on Ubuntu 14.04 LTS
 
+## Task file descriptions
 
+### classes:
+
+* [models](folder/models.extension) folder containing all the classes and corresponding subclass
+* [base.py](models/base.py) - Contains the base class `Base` for all other classe:
+* Private class attribute `__nb_objects = 0.`
+* Public instance attribute `id.`
+* Class constructor `def __init__(self, id=None):`
+  - If `id` is `None,`  increments` __nb_objects` and assigns its value to the public instance attribute `id.`
+  - Otherwise, sets the public instance attribute id to the provided `id.`
